@@ -17,6 +17,6 @@ it('Should render a pokemon', () => {
     />
   )
 
-  const pokemon = screen.getByText(/Charizard/)
+  const pokemon = screen.getByText(/Charizard/i)
   expect(pokemon).toMatchSnapshot()
-})
+}) 

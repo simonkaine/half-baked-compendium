@@ -42,3 +42,4 @@ it('displays a list of pokemon', () => {
   const pokemons = screen.getByRole('list', { name: 'pokemonList' })
   expect(pokemons).toMatchSnapshot()
 })
+

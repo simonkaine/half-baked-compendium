@@ -5,7 +5,7 @@ import Compendium from './Compendium'
 it('Should fetch then render a list of pokemon', async () => {
   render(<Compendium />)
 
-  const loading = screen.getByText(/Loading.../i)
+  const loading = screen.findByText(/Loading.../i)
   expect(loading).toBeInTheDocument()
 
   const pokemons = await screen.findByRole('list', {
@@ -39,3 +39,4 @@ it('should search for a pokemon', async () => {
     expect(pokemons).toMatchSnapshot()
   })
 })
+
